@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>my grid page</title>
+    <style>
+        body {
+            background: #520075e0;
+            color: #520075e0;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 2fr 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            gap: 20px 20px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+            background: rgba(218, 15, 140, 0.981);
+            width: 65%;
+            height: 9%;
+            margin: auto;
+            margin-top: 175px;
+            border: 15px solid #78dc06f6;
+            border-radius: 2ch;
+
+        }
+
+        article {
+            grid-area: main;
+            background: #78dc06f6;
+            border-radius: 1ch;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .header {
+            grid-area: header;
+            background: rgba(46, 9, 34, 0.133)
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        h1 {
+            color: fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article>
+            <h1>Nya's Offial
+                site
+            </h1>
+        </article>
+
+        <div class="footer">
+            <p>footer</p>
+
+        </div>
+        
+        <div class="right">
+            <p>right</p>
+        </div>
+        
+        <div class="left"></div>
+        <p>left</p>
+      
+        <header>
+            <p>7yu7guyb</p>
+        </header>
+        <footer> header</footer>
+    </div>
+
+</body>
+
+</html>
